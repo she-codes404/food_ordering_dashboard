@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BurgerWorld Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="dashboard">
+      <!-- Sidebar / Categories -->
+      <div class="sidebar">
+        <div class="logo">
+          <img
+            src="https://api.iconify.design/fluent-emoji:hamburger.svg"
+            class="logo-icon"
+            alt="Logo"
+          />
+          <span>BurgerWorld</span>
+        </div>
+
+        <div class="nav-section">
+          <h4 class="nav-header">Menu</h4>
+          <div class="nav-item active">
+            <i class="fas fa-hamburger"></i>
+            <span>Burgers</span>
+          </div>
+          <div class="nav-item">
+            <i class="fas fa-utensils"></i>
+            <span>Sides</span>
+          </div>
+          <div class="nav-item">
+            <i class="fas fa-cocktail"></i>
+            <span>Drinks</span>
+          </div>
+          <div class="nav-item">
+            <i class="fas fa-ice-cream"></i>
+            <span>Desserts</span>
+          </div>
+        </div>
+
+        <div class="nav-section">
+          <h4 class="nav-header">Account</h4>
+          <div class="nav-item">
+            <i class="fas fa-user"></i>
+            <span>Profile</span>
+          </div>
+          <div class="nav-item">
+            <i class="fas fa-history"></i>
+            <span>Order History</span>
+          </div>
+          <div class="nav-item">
+            <i class="fas fa-heart"></i>
+            <span>Favorites</span>
+          </div>
+        </div>
+
+        <div class="promo-card">
+          <h3 class="promo-title">Get 20% Off</h3>
+          <p class="promo-description">Use code BURGER20 at checkout</p>
+          <button class="promo-button">Apply Code</button>
+        </div>
+      </div>
+
+      <!-- Main Content Area -->
+      <div class="main-content">
+        <div class="header">
+          <h1 class="page-title">Premium Burgers</h1>
+          <div class="search-container">
+            <i class="fas fa-search search-icon"></i>
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Search menu items..."
+            />
+          </div>
+        </div>
+
+        <div class="categories-filters">
+          <div class="filter-chip active" data-category="all">All Burgers</div>
+          <div class="filter-chip" data-category="beef">Beef</div>
+          <div class="filter-chip" data-category="chicken">Chicken</div>
+          <div class="filter-chip" data-category="veggie">Veggie</div>
+          <div class="filter-chip" data-category="special">Special</div>
+          <div class="filter-chip" data-category="bestsellers">Bestsellers</div>
+        </div>
+
+        <h2 class="section-title">Featured Burgers</h2>
+
+        <!-- Menu Items -->
+        <div class="menu-items">
+          <div class="menu-item" data-id="1" data-category="beef" data-tags="bestseller">
+            <img
+              src="https://cdn.pixabay.com/photo/2023/09/25/22/08/ai-generated-8276129_1280.jpg"
+              alt="Signature Burger"
+              class="item-image"
+            />
+            <div class="item-details">
+              <div class="item-tags">
+                <span class="item-tag">Bestseller</span>
+              </div>
+              <h3 class="item-name">Signature Burger</h3>
+              <p class="item-description">
+                Premium beef patty with fresh lettuce, tomato, onion, pickles,
+                and our secret signature sauce.
+              </p>
+              <div class="item-bottom">
+                <span class="item-price">$9.99</span>
+                <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-id="2" data-category="beef" data-tags="popular">
+            <img
+              src="https://cdn.pixabay.com/photo/2022/08/29/17/44/burger-7419420_1280.jpg"
+              alt="Double Cheese Deluxe"
+              class="item-image"
+            />
+            <div class="item-details">
+              <div class="item-tags">
+                <span class="item-tag">Popular</span>
+              </div>
+              <h3 class="item-name">Double Cheese Deluxe</h3>
+              <p class="item-description">
+                Two juicy beef patties with double cheddar cheese, caramelized
+                onions, and special sauce.
+              </p>
+              <div class="item-bottom">
+                <span class="item-price">$12.99</span>
+                <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-id="3" data-category="beef" data-tags="new">
+            <img
+              src="https://cdn.pixabay.com/photo/2014/10/19/20/59/hamburger-494706_1280.jpg"
+              alt="Bacon Avocado"
+              class="item-image"
+            />
+            <div class="item-details">
+              <div class="item-tags">
+                <span class="item-tag">New</span>
+              </div>
+              <h3 class="item-name">Bacon Avocado</h3>
+              <p class="item-description">
+                Angus beef patty topped with crispy bacon, fresh avocado,
+                lettuce, and garlic aioli.
+              </p>
+              <div class="item-bottom">
+                <span class="item-price">$13.99</span>
+                <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-id="4" data-category="beef" data-tags="spicy">
+            <img
+              src="https://cdn.pixabay.com/photo/2020/09/14/16/23/burger-5571385_1280.jpg"
+              alt="Spicy Jalapeño"
+              class="item-image"
+            />
+            <div class="item-details">
+              <div class="item-tags">
+                <span class="item-tag">Spicy</span>
+              </div>
+              <h3 class="item-name">Spicy Jalapeño</h3>
+              <p class="item-description">
+                Beef patty with pepper jack cheese, fresh jalapeños, spicy mayo,
+                and crispy onion strings.
+              </p>
+              <div class="item-bottom">
+                <span class="item-price">$11.99</span>
+                <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-id="5" data-category="beef" data-tags="classic">
+            <img
+              src="https://cdn.pixabay.com/photo/2021/12/09/20/46/burger-6859072_1280.jpg"
+              alt="Mushroom Swiss"
+              class="item-image"
+            />
+            <div class="item-details">
+              <div class="item-tags">
+                <span class="item-tag">Classic</span>
+              </div>
+              <h3 class="item-name">Mushroom Swiss</h3>
+              <p class="item-description">
+                Beef patty topped with sautéed mushrooms, melted Swiss cheese,
+                and truffle aioli.
+              </p>
+              <div class="item-bottom">
+                <span class="item-price">$12.49</span>
+                <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-id="6" data-category="veggie" data-tags="vegetarian">
+            <img
+              src="https://cdn.pixabay.com/photo/2021/03/19/21/52/burger-6108495_1280.jpg"
+              alt="Veggie Deluxe"
+              class="item-image"
+            />
+            <div class="item-details">
+              <div class="item-tags">
+                <span class="item-tag">Vegetarian</span>
+              </div>
+              <h3 class="item-name">Veggie Deluxe</h3>
+              <p class="item-description">
+                Plant-based patty with fresh avocado, grilled peppers, lettuce,
+                and vegan garlic aioli.
+              </p>
+              <div class="item-bottom">
+                <span class="item-price">$10.99</span>
+                <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cart Section -->
+      <div class="cart-section">
+        <div class="cart-title">
+          <span>Your Order</span>
+          <div class="cart-icon"><i class="fas fa-shopping-cart"></i></div>
+        </div>
+
+        <div class="cart-items">
+          <!-- Empty cart message -->
+          <div class="empty-cart">
+            <div class="empty-cart-icon">
+              <i class="fas fa-shopping-bag"></i>
+            </div>
+            <p>Your cart is empty</p>
+            <p>Add some delicious burgers to get started</p>
+          </div>
+
+          <!-- Cart items will be added here by JavaScript -->
+        </div>
+
+        <div class="cart-total">
+          <div class="total-row">
+            <span class="total-title">Subtotal</span>
+            <span class="total-value" id="subtotal">$0.00</span>
+          </div>
+          <div class="total-row">
+            <span class="total-title">Tax (10%)</span>
+            <span class="total-value" id="tax">$0.00</span>
+          </div>
+          <div class="total-row">
+            <span class="total-title">Delivery</span>
+            <span class="total-value" id="delivery">$2.50</span>
+          </div>
+          <div class="total-row grand-total">
+            <span class="total-title">Total</span>
+            <span class="total-value" id="total">$0.00</span>
+          </div>
+        </div>
+
+        <button class="checkout-btn">
+          <i class="fas fa-credit-card"></i>
+          Proceed to Checkout
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
