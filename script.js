@@ -79,6 +79,14 @@ let filterChips = document.querySelectorAll(".filter-chip");
 
 // Initialize
 document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".add-to-cart").forEach((button) => {
+    button.addEventListener("click", (e) => {
+      const menuItem = e.target.closest(".menu-item");
+      const itemId = parseInt(menuItem.dataset.id);
+      addToCart(itemId);
+    });
+  });
+  
   searchInput = document.querySelector(".search-input"); // Now this works
   filterChips = document.querySelectorAll(".filter-chip");
 
